@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+                <img id="header-img" src="http://www.pngmart.com/files/7/Wand-PNG-Photos.png" alt="Logo, wand">
+            <h1>Ollivanders</h1>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#locations" class="nav-link">Locations</a></li>
+                    <li><a href="#materials" class="nav-link">Materials</a></li>
+                    <li><a href="#prices" class="nav-link">Prices</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Welcome to Ollivanders: Makers of Fine Wands since 382 B.C. We have wands for everyone, even staffs if you really have to.</h2>
+            
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label id="email-label" for="email">
+                    Subscribe for news and offers:
+                </label>
+                <input name="email" type="email" id="email" placeholder="Enter email here" required> 
+                <input type="submit" id="submit" value="Submit">
+            </form>
+
+            <iframe id="video" height="480" width="854"  src="" allowfullscreen></iframe>
+
+            <div class="contents">
+                <section id="locations">
+                    <h2>Locations</h2>
+                    <p>Our flagship store is located in the South Side of Diagon Alley, London, England.</p>
+                    <p>We also have a store located in High Street, Hogsmeade, Scotland.</p>
+                </section>
+                <section id="materials">
+                        <h2>Materials</h2> 
+                        <p>Wands are made from all types of woods, giving them different properties. </p>
+                        <p>Our wand cores are made from one of the three supreme core types; unicorn hair, dragon heartstring and phoenix feather.</p>
+                </section>
+                <section id="prices">
+                    <div class="product" id="wand">
+                        <div class="level">Wand</div>
+                        <h3>7 Galleons</h3>
+                        <p>The wand chooses the wizard. This means that you have to buy it in store.</p>
+                    </div>
+                    <div class="product" id="staff">
+                        <div class="level">Staff</div>
+                        <h3>15 Galleons</h3>
+                        <p>The same as with the wands. Have to be bought in store.</p>
+                    </div>
+                    <div class="product" id="Peacock feather">
+                        <div class="level" id="peacock-feather">Peacock Feather</div>
+                        <h3>1 Knut</h3>
+                        <p>Feathers from my peacock. Can be used in Dragon Tonic and as a quill.</p>
+                        <button class="btn">Buy</button>
+                    </div>
+
+                </section>
+            </div>
+
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey form. Please fill it out.</p>    
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name:</label>
+                <input 
+                    type="text" 
+                    class="form-control"   
+                    name="name"    
+                    id="name"
+                    placeholder="Write your name here"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="email-label">Email:</label>
+                <input 
+                    type="email"
+                    class="form-control"   
+                    id="email"
+                    name="email"
+                    placeholder="Email goes here"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label">Age:</label>
+                <input 
+                    type="number"
+                    class="form-control"   
+                    id="number"
+                    name="number"
+                    placeholder="#"
+                    min="16"
+                    max="115"
+                    required>
+            </div>
+            <div class="form-group">
+                <p>What is you current occupation?</p>
+                <select id="dropdown" name="Occupations" required>
+                    <option value="student">Student</option>
+                    <option value="unemployed">Unempolyed</option>
+                    <option value="Employed">Employed</option>
+                    <option value="military">Military</option>
+                    <option value="gapyear">Taking a gap year</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <label>
+                    <input class="input-radio" type="radio" name="gender" value="female">Female<br>
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="gender" value="male">Male<br>
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="gender" value="other">Other<br>
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your preferred genre of reading?</p>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="genre" value="fantasy">Fantasy</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="ya">YA</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="crime">Crime</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="horror">Horror</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="scify">Sci-Fy</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="Romance">Romance</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="fantasy">Fantasy</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="history">History</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="thriller">Thriller</br>
+                </label>
+                <label>
+                        <input class="input-checkbox" type="checkbox" name="genre" value="selfhelp">Self help</br>
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any not mentioned genres you prefer?</p>
+                <textarea rows="5" cols="50"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
