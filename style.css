@@ -4,19 +4,25 @@ html {
 body{
     margin: 0;
     padding: 0;
+    color: #134970;
+    background: #EEF6FC;
+    font-size: 20px;
 }
 #welcome-section {
-    background: lightcyan;
+    background: #134970;
+    color: #EEF6FC;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    font-size: 30px;
+
 }
 
 #welcome-section .highlight {
-    color: red;
+    color:#C84C4A;
 } 
 
 .welcome-button{
@@ -36,7 +42,7 @@ body{
     height: 50px;
     width: 100%;
     text-align: left;
-    background: yellow;
+    background: #C84C4A;
     font-size: 12pt;
     text-transform: uppercase;
     padding: 10px;
@@ -52,11 +58,14 @@ nav a{
     width: 60px;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease-out;
 }
 
 nav a:hover{
-    color: blueviolet;
+    color: #134970;
+    transform: translateY(8px);
 }
+
 
 #projects{
     display: grid;
@@ -75,21 +84,46 @@ nav a:hover{
     justify-items: center;
 }
 
-.project-tile{
+.project-tile-link{
     display: grid;
     justify-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #EEF6FC;  
 }
+
+.project-tile-link:hover{
+    color: #C84C4A;
+}
+
+
+.project-title {
+    margin: 0;
+    padding: 1.5rem 0.5rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    background: #134970;
+    width: 590px;
+}
+
+iframe {
+    margin: none;
+    padding: none;
+    line-height: 0;
+    float: left;
+    border-radius: 5px;
+}
+
 
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 2px;
+    font-size: 2rem;
   }
+ 
   
-
-  .btn-show-all:hover > i {
-    transform: translateX(2px);
-  }
   
   #contact{
     display: flex;
@@ -98,9 +132,11 @@ nav a:hover{
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: #134970;
+    color: #EEF6FC;
+
   }
   .contact-links {
     display: flex;
@@ -109,12 +145,15 @@ nav a:hover{
     max-width: 980px;
     margin-top: 4rem;
     flex-wrap: wrap;
-  }
-  
-  
-.contact-details {
-    font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
-  }
+}
 
+.contact-links a{
+    text-decoration: none;
+    color: #EEF6FC;
+
+}
+
+.contact-links a:hover{
+    color:#C84C4A;
+}
+  
