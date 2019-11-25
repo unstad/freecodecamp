@@ -1,12 +1,13 @@
-html {
-    scroll-behavior: smooth;
-}
+html,
 body{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     color: #134970;
     background: #EEF6FC;
     font-size: 20px;
+    height: 100%;
+    width: 100%;
 }
 #welcome-section {
     background: #134970;
@@ -68,11 +69,13 @@ nav a:hover{
 
 
 #projects{
+    padding-top: 60px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin: 2rem;
     margin-bottom: 6rem;
 }
 
@@ -91,6 +94,7 @@ nav a:hover{
     padding: 0;
     text-decoration: none;
     color: #EEF6FC;  
+ 
 }
 
 .project-tile-link:hover{
@@ -104,7 +108,7 @@ nav a:hover{
     font-size: 2rem;
     border-radius: 5px;
     background: #134970;
-    width: 590px;
+    width: 100%;
 }
 
 iframe {
@@ -113,8 +117,23 @@ iframe {
     line-height: 0;
     float: left;
     border-radius: 5px;
+    width: calc(100vw * 0.45);
+    height: 25vw;
 }
-
+@media only screen and (max-width: 768px){
+    #projects{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projects-header{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    iframe{
+        width: calc(100vw - 4rem);
+        height: calc(62.5vw - 4rem);
+    }
+}
 
 .btn {
     display: inline-block;
